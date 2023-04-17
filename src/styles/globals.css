@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,14 +14,62 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+.container {
+  width: 100vw;
+  height: 90vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+}
+
+.input {
+  height: 5vh;
+  width: 25vw;
+  border-radius: 10px;
+  padding-left: 1vw;
+}
+
+.header {
+  margin-left: 5vw;
+  margin-top: 3vh;
+  color:whitesmoke;
+  font-size: 42px;
+}
+
+/* .input::placeholder {
+  padding-left: 1vw;
+} */
+
+.action {
+  margin-top: 3.3vh;
+}
+
+.button {
+  background-color: aquamarine; /* Green */
+  border: none;
+  color: black;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.success-message {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+  color:white;
+  font-size: 42px;
+  font-weight: 2200;
 }
